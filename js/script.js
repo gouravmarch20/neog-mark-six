@@ -1,8 +1,6 @@
 const englishText = document.querySelector('#user-input')
 const minionTranslate = document.querySelector('#minion-translate')
-const minionOutput = document.querySelector('#minion-output')
-const q = document.querySelector('#q')
-const p = document.querySelector('#heading')
+const displayOutput = document.querySelector('#display-output')
 
 const serverUrl = 'https://api.funtranslations.com/translate/minion.json'
 
@@ -19,11 +17,12 @@ function takeInput () {
     .then(result => {
       console.log(result.contents.translation)
       console.log(result)
-      p.innerText = result.contents.translated
+      displayOutput.style.display = 'flex'
+      displayOutput.innerText = result.contents.translated
     })
     .catch(error => {
-      console.log('object')
-      console.error('Error:', error)
+      displayOutput.style.display = 'flex'
+      displayOutput.innerText = 'Error occur . api limit exceed '
     })
 }
 

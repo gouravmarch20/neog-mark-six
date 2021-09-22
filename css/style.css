@@ -1,0 +1,48 @@
+
+
+:root {
+  --info-color: #03203c;
+  --danger-color: #e8bd0d;
+  --warning-color: #b9345a;
+}
+
+body {
+  background-color: var(--info-color);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+  margin: 0 auto;
+  margin-top: 10rem;
+}
+.set-margin {
+  margin-top: 1.4rem !important;
+}
+.set-padding {
+  padding: 1.3rem;
+}
+.heading-one{
+    color: var(--danger-color);
+    text-align: center;
+}
+button {
+  width: 30%;
+  margin: auto;
+  padding: 0.3rem;
+  border-radius: 2rem;
+  background-color: var(--danger-color);
+  cursor: pointer;
+}
+#display-output {
+box-sizing: border-box;
+
+    display: none;
+  text-align: center;
+  background-color: var(--warning-color);
+  color: var(--danger-color);
+  border-radius: 2rem;
+  width: 75%;
+  height: 10vh;
+  margin: 0 auto;
+}
