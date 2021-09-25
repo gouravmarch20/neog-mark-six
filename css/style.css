@@ -3,9 +3,11 @@
 :root {
   --info-color: #03203c;
   --danger-color: #e8bd0d;
-  --warning-color: #b9345a;
+  --warning-color: #1B98F5;
 }
-
+input{
+  border-radius: 2rem 0rem;
+}
 body {
   background-color: var(--info-color);
 }
@@ -38,11 +40,11 @@ button {
 box-sizing: border-box;
 
     display: none;
-  text-align: center;
-  background-color: var(--warning-color);
-  color: var(--danger-color);
-  border-radius: 2rem;
-  width: 75%;
-  height: 10vh;
-  margin: 0 auto;
+    background-color: var(--warning-color);
+    color: var(--danger-color);
+    
+    border-radius: 2rem;
+    width: 75%;
+    height: 10vh;
+    margin: 3rem auto;
 }
