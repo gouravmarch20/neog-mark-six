@@ -11,17 +11,18 @@ function createFinalUrl (serverUrl) {
 
 function takeInput () {
   userInput = englishText.value
-  // console.log(createFinalUrl(serverUrl))
   fetch(createFinalUrl(serverUrl))
     .then(response => response.json())
     .then(result => {
-      console.log(result.contents.translation)
-      console.log(result)
-      displayOutput.style.display = 'flex'
+      if (userInput === '') {
+        alert('input require ')
+      }
       displayOutput.innerText = result.contents.translated
+      displayOutput.style.color = 'white'
     })
     .catch(error => {
-      displayOutput.style.display = 'flex'
+      displayOutput.style.color = 'white'
+
       displayOutput.innerText = 'Error occur . api limit exceed '
     })
 }
