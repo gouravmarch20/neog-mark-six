@@ -52,7 +52,6 @@ body {
 
   margin: 0rem auto;
   border-radius: 1rem;
-  /* background-color: var(--sky-blue-color); */
 }
 #display-output {
   background-color: var(--dark-blue-color);
